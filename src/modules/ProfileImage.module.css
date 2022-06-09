@@ -1,0 +1,20 @@
+.UserAvatar{
+    width: 3.75rem;
+    height: 3.75rem;
+
+    padding: 3px;
+
+    border: 3px solid var(--green-500);
+    border-radius: 8px;
+
+    background-color: var(--gray-800);
+}
+
+.UserAvatar  img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    
+    object-fit: cover;
+
+    border-radius: 5px;
+}

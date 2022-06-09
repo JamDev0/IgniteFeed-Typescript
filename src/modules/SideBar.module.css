@@ -1,0 +1,94 @@
+.SideBar {
+    grid-area: SideBar;
+
+    border-radius: 8px;
+
+    width: 100%;
+    height: min-content;
+
+    overflow: hidden;
+
+
+    background-color: var(--gray-800);
+}
+
+.ImgDiv{
+    height: 72px;
+
+    background-image: url('https://images.unsplash.com/photo-1515405295579-ba7b45403062?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=60');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ContentDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ContentDiv  h2 {
+    font-size: 1rem;
+    color: var(--gray-100);
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.ContentDiv  span {
+    font-size: 0.88rem;
+}
+
+.SideBar footer{
+    width: 100%;
+    
+    border-top: 2px solid var(--gray-600);
+
+    padding: 1.5rem 1.5rem 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.SideBar footer  a {
+    background: transparent;
+    color: var(--green-500);
+    border: 1px solid var(--green-500);
+    border-radius: 8px;
+    height: 50px;
+    padding: 0 1.5rem;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.625rem;
+}
+
+.SideBar footer  a {
+    background: transparent;
+    color: var(--green-500);
+    border: 1px solid var(--green-500);
+    border-radius: 8px;
+    height: 50px;
+    padding: 0 1.5rem;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.625rem;
+
+    transition: color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.SideBar footer  a:hover {
+    background: var(--green-500);
+    color: var(--gray-100);
+}
+
+.SideBar footer  a  img{
+    width: 1.25rem;
+}

@@ -1,0 +1,113 @@
+.Comment {
+    position: relative;
+
+    display: grid;
+    grid-template-areas: "Img Comment"
+                         "Img Reactions";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 16px;
+    row-gap: 16px;
+    justify-content: flex-start;
+
+    width: 100%;
+}
+
+.Trash {
+    position: absolute;
+
+    top: 16px;
+    right: 16px;
+
+    font-size: 1.5rem;
+
+    transition: color 0.2s ease-in-out;
+}
+
+.Trash:hover {
+    cursor: pointer;
+
+    color: var(--red-500);
+}
+
+.Comment img {
+    grid-area: Img;
+
+    width: 3.12rem;
+    height: 3.12rem;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+.Content {
+    position: relative;
+
+    background-color: var(--gray-700);
+
+    border-radius: 8px;
+
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    width: 100%;
+}
+
+.Content header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.Content header div {
+    display: flex;
+    column-gap: 0.3rem;
+}
+
+.Content header h2 {
+    color: var(--gray-100);
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.Content header time {
+    font-size: 0.75rem;
+    color: var(--gray-400);
+}
+
+.Content p {
+    color: var(--gray-100);
+    font-size: 0.85rem;
+}
+
+.Reactions {
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 12px;
+
+    cursor: pointer;
+}
+
+.Reactions * {
+    transition: color 0.2s linear;
+}
+
+.Reactions:hover[data-notfocus=false] * {
+    color: var(--gray-100);
+}
+
+.Reactions img {
+    width: 1rem;
+}
+
+.Reactions span {
+    color: var(--gray-400);
+    font-size: 0.85rem;
+    font-weight: bold;
+}

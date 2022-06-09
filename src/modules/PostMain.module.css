@@ -1,0 +1,15 @@
+.Main {
+    font-size: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 25.6px;
+
+    color: var(--gray-300);
+}
+
+.Main a{
+    color: var(--green-500);
+    text-decoration: none;
+}
