@@ -21,7 +21,7 @@ interface Props {
         PublishTime: number;
         Content: string;
         LikesAmount: number;
-    }[] | null;
+    }[] | [];
 }
 
 export function Post({ ProfilePic, UserName, UserRole, PublishTime, Content, CommentsContent }:Props){

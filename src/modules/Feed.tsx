@@ -60,7 +60,7 @@ export function Feed(){
     function findTheRelatedCommentsArray (Content: Posts["Content"]) {
         const foundComments = Comments?.find(Comment => Comment.Id === Content.CommentId);
 
-        if(!foundComments) return null;
+        if(!foundComments) return [];
 
         return foundComments.Content; 
     }
