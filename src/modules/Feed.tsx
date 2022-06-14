@@ -52,8 +52,9 @@ export function Feed(){
     }
 
     useEffect(()=>{
-        GetComments('../Jsons/Comments.json').then(data => setComments(data));
-        GetPosts('../Jsons/Posts.json').then(data => setPosts(data));
+        
+        GetComments('./src/Jsons/Comments.json').then(data => setComments(data));
+        GetPosts('./src/Jsons/Posts.json').then(data => setPosts(data));
     }, [])
 
 
